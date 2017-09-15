@@ -31,6 +31,7 @@ from moduleframework.common import *
 class EnvRpm(CommonFunctions):
 
     def prepare_env(self):
+        print_info('Loaded config for repo: {}'.format(self.config['module']['rpm']['repo']))
         self.installTestDependencies()
         print_info("WARNING: Testing is going to be performed on this machine")
         pass

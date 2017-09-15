@@ -33,6 +33,7 @@ setseto = "Permissive"
 class EnvNspawn(CommonFunctions):
 
     def prepare_env(self):
+        print_info('Loaded config for repo: {}'.format(self.config['module']['rpm']['repo']))
         self.installTestDependencies()
         self.__prepare_selinux()
         self.__install_machined()

@@ -31,7 +31,7 @@ from moduleframework.common import *
 class EnvDocker(CommonFunctions):
 
     def prepare_env(self):
-        print_info('Loaded config for: {}'.format(self.config['module']['docker']['container']))
+        print_info('Loaded config for container: {}'.format(self.config['module']['docker']['container']))
         self.installTestDependencies()
         self.__install_env()
         self.__start_service()
